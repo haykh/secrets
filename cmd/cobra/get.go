@@ -9,7 +9,7 @@ import (
 
 var getCmd = &cobra.Command{
 	Use:   "get",
-	Short: "Gets a secret from the secret storage",
+	Short: "gets the value associated with the given key from secret storage",
 	Run: func(cmd *cobra.Command, args []string) {
 		v := secret.File(encodingKey, secretsPath())
 		key := args[0]

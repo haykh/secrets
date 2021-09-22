@@ -9,7 +9,7 @@ import (
 
 var setCmd = &cobra.Command{
 	Use:   "set",
-	Short: "Sets a secret in the secret storage",
+	Short: "sets a key value pair in secret storage",
 	Run: func(cmd *cobra.Command, args []string) {
 		v := secret.File(encodingKey, secretsPath())
 		key, value := args[0], args[1]
