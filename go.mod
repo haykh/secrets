@@ -1,4 +1,4 @@
-module github.com/haykh/secrets
+module github.com/haykh/goencode
 
 go 1.18
 

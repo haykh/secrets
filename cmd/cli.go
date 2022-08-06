@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/haykh/secrets/cmd/cobra"
+	"github.com/haykh/goencode/cmd/cobra"
 )
 
 func main() {

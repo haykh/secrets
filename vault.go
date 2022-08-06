@@ -1,4 +1,4 @@
-package secrets
+package goencode
 
 import (
 	"encoding/json"
@@ -7,7 +7,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/haykh/secrets/cipher"
+	"github.com/haykh/goencode/cipher"
 )
 
 type Vault struct {

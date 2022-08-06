@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/haykh/secrets"
 	"github.com/spf13/cobra"
 )
 
@@ -12,7 +11,7 @@ var listCmd = &cobra.Command{
 	Use:   "list",
 	Short: "lists all keys with associated values in secret storage",
 	Run: func(cmd *cobra.Command, args []string) {
-		v := secrets.File(encodingKey, secretsPath())
+		v := goencode.File(encodingKey, secretsPath())
 		keys, err := v.List()
 		if err != nil {
 			fmt.Println("Failed to retrieve keys")

@@ -5,11 +5,11 @@
 ### Build
 First, build the application with:
 
-```go build -o ./secrets cmd/cli.go```
+```go build -o ./goencode cmd/cli.go```
 
 ### Commands:
 To execute:
-```./secrets```
+```./goencode```
 
 This will show all commands available via the command line interface.
 Supported commands are:
@@ -20,19 +20,19 @@ Supported commands are:
 
 #### Example usage:
 ```bash
-./secrets set "key" "value" -k "encoding-key"
+./goencode set "key" "value" -k "encoding-key"
 
-./secrets get "key" -k "encoding-key"
+./goencode get "key" -k "encoding-key"
 
-./secrets list -k "encoding-key"
+./goencode list -k "encoding-key"
 
-./secrets delete "key" -k "encoding-key
+./goencode delete "key" -k "encoding-key
 ```
 
 ## Using the Package
 Developers can use the package by doing the following:
 
-```go get github.com/haykh/secrets```
+```go get github.com/haykh/goencode```
 
 Usage of the package in Go code:
 ```go
