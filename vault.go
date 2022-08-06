@@ -7,7 +7,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/patelevans/secret/cipher"
+	"github.com/haykh/secrets/cipher"
 )
 
 type Vault struct {

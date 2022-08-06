@@ -3,7 +3,7 @@ package cobra
 import (
 	"fmt"
 
-	"github.com/patelevans/secret"
+	"github.com/haykh/secrets"
 	"github.com/spf13/cobra"
 )
 
@@ -11,7 +11,7 @@ var setCmd = &cobra.Command{
 	Use:   "set",
 	Short: "sets a key value pair in secret storage",
 	Run: func(cmd *cobra.Command, args []string) {
-		v := secret.File(encodingKey, secretsPath())
+		v := secrets.File(encodingKey, secretsPath())
 		key, value := args[0], args[1]
 		err := v.Set(key, value)
 		if err != nil {

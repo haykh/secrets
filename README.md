@@ -1,6 +1,5 @@
 # Secrets Package and CLI
 
-
 ## Using the CLI
 
 ### Build
@@ -33,7 +32,7 @@ Supported commands are:
 ## Using the Package
 Developers can use the package by doing the following:
 
-```go get github.com/patelevans/secret```
+```go get github.com/haykh/secrets```
 
 Usage of the package in Go code:
 ```go
